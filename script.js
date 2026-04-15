@@ -1,6 +1,24 @@
 const yearEl = document.querySelector("#year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
+const navToggle = document.querySelector(".nav-toggle");
+const navLinks = document.querySelector("#primary-nav-links");
+
+if (navToggle && navLinks) {
+  navToggle.addEventListener("click", () => {
+    const expanded = navToggle.getAttribute("aria-expanded") === "true";
+    navToggle.setAttribute("aria-expanded", String(!expanded));
+    navLinks.classList.toggle("open", !expanded);
+  });
+
+  navLinks.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navToggle.setAttribute("aria-expanded", "false");
+      navLinks.classList.remove("open");
+    });
+  });
+}
+
 const revealNodes = document.querySelectorAll(".reveal");
 
 if ("IntersectionObserver" in window) {

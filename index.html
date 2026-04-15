@@ -8,7 +8,7 @@
       name="description"
       content="Personal website and resume of Christian Jhon A. Caminade, a copywriter and virtual assistant focused on organized client support, customer service, and clear communication."
     />
-    <meta name="theme-color" content="#0f4aa1" />
+    <meta name="theme-color" content="#163c5f" />
     <meta property="og:title" content="Christian Jhon A. Caminade | Copywriter & Virtual Assistant" />
     <meta
       property="og:description"
@@ -40,7 +40,10 @@
     <header class="hero" id="top">
       <nav class="site-nav" aria-label="Primary">
         <a class="brand" href="#top">CJC</a>
-        <ul>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav-links">
+          Menu
+        </button>
+        <ul id="primary-nav-links">
           <li><a href="#services">Services</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#education">Education</a></li>
@@ -48,21 +51,57 @@
         </ul>
       </nav>
 
-      <div class="hero-content section-wrap reveal">
-        <p class="eyebrow">Copywriter + Virtual Assistant</p>
-        <h1>Christian Jhon A. Caminade</h1>
-        <p class="lead">
-          Helping founders and teams stay organized, communicate clearly, and keep customers confident through excellent support, dependable operations, and persuasive writing.
-        </p>
-        <div class="hero-actions">
-          <a class="button primary" href="mailto:jcaminade11@gmail.com">Hire Me</a>
-          <a class="button ghost" href="#experience">View Resume</a>
+      <div class="hero-layout section-wrap reveal">
+        <div class="hero-content">
+          <p class="eyebrow">Copywriter + Virtual Assistant</p>
+          <h1>Christian Jhon A. Caminade</h1>
+          <p class="lead">
+            Dedicated virtual assistant and copywriter with 5+ years of customer service experience and a 150-hour intensive VA certification. I help teams improve communication, keep operations organized, and deliver reliable customer support.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="mailto:cjcaminade11@gmail.com?subject=Hiring%20Inquiry%20for%20Christian%20Caminade">Hire Me Now</a>
+            <a class="button ghost" href="#experience">See My Experience</a>
+            <a
+              class="button secondary"
+              href="https://www.linkedin.com/in/caminade-cj-a5b85b397/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View LinkedIn
+            </a>
+          </div>
+          <p class="hero-support">
+            Open to remote freelance and full-time roles. I typically respond within 24 hours.
+          </p>
         </div>
-        <ul class="contact-strip" aria-label="Quick contact details">
-          <li>Email: <a href="mailto:jcaminade11@gmail.com">jcaminade11@gmail.com</a></li>
-          <li>Alt: <a href="mailto:ccaminade_190000001506@uic.edu.ph">ccaminade_190000001506@uic.edu.ph</a></li>
-          <li>Phone: <a href="tel:+639553447199">+63 955 344 7199</a></li>
-        </ul>
+
+        <div class="hero-side">
+          <figure class="hero-profile">
+            <img
+              src="./assets/images/cjc-profile.png"
+              alt="Portrait of Christian Jhon A. Caminade"
+              width="800"
+              height="800"
+              fetchpriority="high"
+              decoding="async"
+            />
+          </figure>
+
+          <aside class="hero-contact-card" aria-label="Quick contact details">
+            <p class="contact-card-title">Quick Contact</p>
+            <ul class="contact-strip">
+              <li><span class="contact-label">Email</span><a href="mailto:cjcaminade11@gmail.com">cjcaminade11@gmail.com</a></li>
+              <li><span class="contact-label">Phone</span><a href="tel:+639553447199">+63 955 344 7199</a></li>
+              <li>
+                <span class="contact-label">LinkedIn</span>
+                <a href="https://www.linkedin.com/in/caminade-cj-a5b85b397/" target="_blank" rel="noopener noreferrer">
+                  caminade-cj-a5b85b397
+                </a>
+              </li>
+              <li><span class="contact-label">Alt Email</span><a href="mailto:ccaminade_190000001506@uic.edu.ph">ccaminade_190000001506@uic.edu.ph</a></li>
+            </ul>
+          </aside>
+        </div>
       </div>
       <div class="hero-art" aria-hidden="true"></div>
     </header>
@@ -77,6 +116,9 @@
 
       <section class="section-wrap reveal" id="services" aria-labelledby="services-title">
         <h2 id="services-title">Core Services</h2>
+        <p class="section-intro">
+          Practical support designed to reduce workload, improve communication quality, and keep client operations moving smoothly.
+        </p>
         <div class="grid three-col cards">
           <article class="card">
             <h3>Virtual Assistance</h3>
@@ -109,21 +151,43 @@
       </section>
 
       <section class="section-wrap reveal" aria-labelledby="skills-title">
-        <h2 id="skills-title">Other Skills</h2>
-        <ul class="pill-list">
-          <li>Proactiveness and initiative</li>
-          <li>Excellent communication</li>
-          <li>Adaptability and quick learning</li>
-          <li>Analytical problem solving</li>
-          <li>Time and task organization</li>
-          <li>Customer handling and empathy</li>
-          <li>Google Workspace proficiency</li>
-          <li>Tools: Zoom, Calendly, Trello</li>
-        </ul>
+        <h2 id="skills-title">Core Competencies</h2>
+        <p class="section-intro">
+          A balanced skill set across communication, operations, and digital collaboration tools for remote-first workflows.
+        </p>
+        <div class="grid three-col cards competence-grid">
+          <article class="card">
+            <h3>Communication</h3>
+            <ul>
+              <li>Customer handling and empathy</li>
+              <li>Excellent written and verbal communication</li>
+              <li>Brand-aligned, clear client messaging</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Operations</h3>
+            <ul>
+              <li>Calendar and task organization</li>
+              <li>Analytical problem solving</li>
+              <li>Adaptability and proactive execution</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Tools</h3>
+            <ul>
+              <li>Google Workspace</li>
+              <li>Trello and Calendly</li>
+              <li>Zoom and remote collaboration tools</li>
+            </ul>
+          </article>
+        </div>
       </section>
 
       <section class="section-wrap reveal" id="experience" aria-labelledby="experience-title">
         <h2 id="experience-title">Work Experience</h2>
+        <p class="section-intro">
+          Hands-on support experience across customer service, technical troubleshooting, and structured virtual-assistance training.
+        </p>
         <ol class="timeline">
           <li>
             <article>
@@ -159,6 +223,9 @@
 
       <section class="section-wrap reveal" id="education" aria-labelledby="education-title">
         <h2 id="education-title">Education & Certification</h2>
+        <p class="section-intro">
+          Formal academic background and focused training that reinforce communication excellence and process-oriented support work.
+        </p>
         <div class="grid two-col cards">
           <article class="card">
             <h3>Bachelor of Secondary Education (English Major)</h3>
@@ -177,13 +244,23 @@
       </section>
 
       <section class="section-wrap cta reveal" id="contact" aria-labelledby="contact-title">
-        <h2 id="contact-title">Let us build smoother client workflows</h2>
+        <h2 id="contact-title">Ready to Scale Your Operations?</h2>
         <p>
           Available for copywriting support, virtual assistance retainers, and customer experience operations.
         </p>
-        <a class="button primary" href="mailto:jcaminade11@gmail.com?subject=Project%20Inquiry%20for%20Christian%20Caminade">
-          Start a Conversation
-        </a>
+        <div class="cta-actions">
+          <a class="button primary" href="mailto:cjcaminade11@gmail.com?subject=Hiring%20Inquiry%20for%20Christian%20Caminade">
+            Hire Me Now
+          </a>
+          <a
+            class="button secondary"
+            href="https://www.linkedin.com/in/caminade-cj-a5b85b397/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Message Me on LinkedIn
+          </a>
+        </div>
       </section>
     </main>
 
@@ -197,9 +274,10 @@
         "@type": "Person",
         "name": "Christian Jhon A. Caminade",
         "jobTitle": "Copywriter and Virtual Assistant",
-        "email": "mailto:jcaminade11@gmail.com",
+        "email": "mailto:cjcaminade11@gmail.com",
         "telephone": "+63 955 344 7199",
         "alumniOf": "University of the Immaculate Conception",
+        "sameAs": ["https://www.linkedin.com/in/caminade-cj-a5b85b397/"],
         "knowsAbout": [
           "Virtual Assistance",
           "Customer Service",
